@@ -1,0 +1,59 @@
+.textarea-cont {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.textarea-cont label {
+  color: rgb(255, 110, 0);
+  position: absolute;
+  top: 1.7rem;
+  transform: translateY(-50%);
+  left: 1rem;
+  font-size: 1.4rem;
+  transition: all 0.5s ease-out;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.textarea-cont textarea {
+  color: rgb(40, 40, 40);
+  resize: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  outline: none;
+   background-color: rgba(136, 255, 136, 0.15);;
+  border: none;
+  border-bottom: 2px solid rgb(64, 64, 64);
+  border-radius: 0.3rem;
+  font-weight: 550;
+
+  transition: all 0.3s ease-out;
+}
+
+.textarea-cont textarea:focus {
+   background-color: rgba(153, 255, 153, 0.2);
+}
+
+.textarea-cont textarea::-webkit-scrollbar {
+  width: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.textarea-cont textarea::-webkit-scrollbar-thumb {
+  width: 2px;
+  background-color: rgb(0, 90, 0);
+}
+
+.textarea-cont textarea:focus ~ label {
+  transform: translateY(-185%);
+}
+
+.textarea-cont textarea:not(:placeholder-shown) {
+  background-color: rgb(242, 242, 242);
+}
+
+.textarea-cont textarea:not(:placeholder-shown) ~ label {
+  transform: translateY(-185%);
+}

@@ -1,0 +1,75 @@
+.show-score {
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  max-width: 30rem;
+
+  height: 100%;
+  box-shadow: -0.1rem 0 0.2rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.show-score .score-cont {
+  background-color: rgb(243, 243, 243);
+  height: 88%;
+  padding: 0 1rem;
+}
+.show-score .score-cont h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1.8rem 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.show-score .score-cont table {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+  max-width: 25rem;
+  margin: 1rem auto;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  padding: 0.8rem 0.6rem;
+}
+
+.show-score .score-cont table tr {
+  font-size: 2rem;
+  height: 4rem;
+}
+
+/* .show-score .score-cont table tr td {
+} */
+
+.show-score .score-cont table tr td:first-child {
+  width: 80%;
+  text-transform: capitalize;
+}
+
+.show-score .score-cont table tr td:last-child {
+  color: red;
+  text-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.show-score .score-cont .btn--restart {
+  background-color: rgb(82, 82, 190);
+  outline: none;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  font-size: 2rem;
+  display: block;
+  margin: 4rem auto;
+  padding: 0.4em 1em;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.25s ease-out;
+}
+
+.show-score .score-cont .btn--restart:hover {
+  transform: scale(1.05);
+}
+
+.show-score .score-cont .btn--restart:active {
+  transform: scale(1);
+}

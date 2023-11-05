@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-transform: capitalize;
+}
+
+.item {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin: 1.5rem auto;
+  border-bottom: 0.12rem solid lightgray;
+  padding-bottom: 1rem;
+  overflow: hidden;
+}
+
+.item .img-cont {
+  width: 40%;
+  position: relative;
+  max-height: 25rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.item .img-cont .favour {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.4rem 0.4rem;
+  top: 0;
+  left: 0;
+}
+
+.item .img-cont .favour p {
+  display: flex;
+  align-items: center;
+}
+
+.item .img-cont .favour p span {
+  color: white;
+}
+
+.item .img-cont .favour p .like {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+.item .img-cont .favour p .like:hover {
+  transform: translateY(-0.2rem);
+}
+
+.item .img-cont .favour p .like:active {
+  transform: translateY(0rem);
+}
+
+.item .img-cont .favour p .favour-count {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.item .img-cont img {
+  object-fit: cover;
+  object-position: center center;
+}
+
+.info {
+  width: 60%;
+  margin-left: 1rem;
+}
+
+.info h1 {
+  color: rgb(48, 48, 48);
+}
+
+.info .author {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info .author span {
+  font-weight: 700;
+  color: rgba(45, 45, 45, 0.8);
+}
+
+.info .author time {
+  font-weight: 700;
+  color: rgba(45, 45, 45, 0.6);
+}
+
+.info p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: rgb(68, 68, 68);
+}
+
+a.detail-btn {
+  text-decoration: none;
+}
+
+a.detail-btn:hover {
+  opacity: 0.8rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 650px) {
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+  .item .img-cont {
+    width: 100%;
+    max-height: 20rem;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .item .img-cont img {
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .item  .info {
+    width: 100%;
+    padding: .5rem .5rem;
+  }
+}

@@ -1,0 +1,67 @@
+label {
+  font-size: 1.4rem;
+}
+
+input {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  font-size: 600;
+}
+
+.p-link {
+  font-size: 1.3rem;
+  color: rgb(91, 91, 91);
+  font-weight: 550;
+  margin: 0.8rem 0;
+}
+
+.p-link span {
+  color: rgba(0, 0, 100, 0.7);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  font-weight: 700;
+  color: rgb(60, 60, 60);
+  margin: 1rem 0;
+}
+
+.error-msg {
+  font-size: 1.4rem;
+  padding: 0.5rem 0.5rem;
+  color: red;
+  background-color: rgba(255, 173, 173, 0.868);
+  border-radius: 0.4rem;
+  margin: 1rem 0;
+}
+form {
+  box-shadow: 0 0 0.2rem rgba(100, 100, 100, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: .4rem;
+}
+
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  width: 60%;
+  max-width: 500px;
+}
+
+.sign-up h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  color: rgb(56, 56, 56);
+}
+
+.sign-up div {
+  display: flex;
+  flex-direction: column;
+}

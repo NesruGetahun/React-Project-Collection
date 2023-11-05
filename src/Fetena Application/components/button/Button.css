@@ -1,0 +1,29 @@
+.btn-cont {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-cont button {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  color: rgb(87, 87, 87);
+  padding: .7rem 1rem;
+  outline: none;
+  border: 1.35px solid rgba(0, 45, 0, 0.45);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.btn-cont button:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-cont button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 0 transparent;
+}

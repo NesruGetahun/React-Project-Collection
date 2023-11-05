@@ -1,0 +1,61 @@
+/* .get-records {
+   
+} */
+
+.get-records .records {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.get-records .records a {
+  text-decoration: none;
+}
+
+.get-records .records .record {
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
+  padding: 0.4rem 0.7rem;
+  background-color: rgba(220, 220, 220, 0.12);
+  width: 98%;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.get-records .records .record:hover {
+  transform: translateY(-0.15rem);
+}
+
+.get-records .records .record:active {
+  transform: translateY(0);
+}
+
+.get-records .records .record .header {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.7rem;
+  padding: 0.4rem 0;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}
+
+.get-records .records .record .header div {
+  margin: 0.5rem 0;
+}
+
+.get-records .records .record p {
+  position: absolute;
+  top: -0.7em;
+  right: 0;
+  font-size: 1.2rem;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.6);
+  padding: 0.2em 0.2em;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(91, 91, 91);
+  background-color: white;
+}

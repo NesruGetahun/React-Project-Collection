@@ -1,0 +1,42 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.game-board {
+   width: 560px;
+   height: 560px;
+   background-color: #ffffff;
+   margin: 1rem auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.candy {
+   width: 70px;
+   height: 70px;
+   border: 1px solid #fff;
+}
+
+img {
+   object-fit: cover;
+   background-position: center;
+}
+
+.score {
+   position: absolute;
+   top: 3rem;
+   left: 85%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.result {
+   font-size: 4rem;
+   font-weight: 700;
+   color: crimson;
+   text-decoration: underline;
+}
+

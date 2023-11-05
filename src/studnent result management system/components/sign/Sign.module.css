@@ -1,0 +1,43 @@
+.sign {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sign .sign-container {
+  width: 100%;
+  min-width: 35rem;
+  max-width: 46rem;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  padding: 1.5em 4em;
+}
+
+.sign form {
+  width: 100%;
+  margin: 0 auto;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign p {
+  margin-top: 0.4em;
+  width: 100%;
+  font-size: 1.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(108, 108, 108);
+  justify-self: start;
+}
+
+.sign p a {
+  cursor: pointer;
+  color: rgba(25, 25, 172, 0.8);
+  font-style: italic;
+}

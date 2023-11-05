@@ -1,0 +1,61 @@
+.input-container {
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container input {
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding: 0.7em 0.5em;
+  border: 1.4px solid gray;
+  border-radius: 0.4em;
+  z-index: 29;
+  transition: all 0.3s ease-out;
+}
+
+.input-container .lock {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  font-size: 1.8rem;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  z-index: 199;
+  transition: all 0.2s ease-out;
+}
+
+.input-container .lock:hover {
+  transform: translate(0, -50%) scale(1.1);
+}
+
+.input-container .lock:active {
+  transform: translate(0, -50%) scale(1);
+}
+
+.input-container label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 0.4em;
+  z-index: 19;
+  background-color: white;
+  padding: 0 0.1em;
+  transform: translate(0, -50%);
+  transition: all 0.3s ease-out;
+}
+
+.input-container input:focus + label {
+  transform: translate(0, -180%);
+  z-index: 99;
+}
+
+.input-container input:not(:placeholder-shown) + label {
+  transform: translate(0, -180%);
+  z-index: 99;
+}

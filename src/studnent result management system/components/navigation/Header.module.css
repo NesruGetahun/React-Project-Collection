@@ -1,0 +1,162 @@
+:root {
+  --hover-bgColor: rgb(189, 255, 179);
+}
+
+header {
+  background-color: rgba(244, 244, 244, 0.6);
+  border-bottom: 0.2px solid rgb(176, 176, 176);
+  padding: 1em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: all 0.2s ease-out;
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+header .logo:hover {
+  margin-left: 1rem;
+  opacity: 0.85;
+}
+
+header .logo:active {
+  margin-left: 1rem;
+  opacity: 1;
+}
+
+header .options {
+  margin-right: 1rem;
+}
+
+header .options .menu-btn {
+  background-color: white;
+  width: 3.4rem;
+  border-radius: 0.2rem;
+  position: fixed;
+  top: 1.4rem;
+  right: 1rem;
+
+  z-index: 1999;
+  cursor: pointer;
+  display: none;
+  overflow: hidden;
+}
+
+header .options .menu-btn span {
+  float: left;
+  display: block;
+  width: 100%;
+  height: 0.3rem;
+  margin: 0.2rem 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-out;
+}
+
+header .options .menu-btn:hover {
+  transform: scale(1.05);
+}
+
+header .options .menu-btn:hover span {
+  transform: skew(45deg, 0deg);
+}
+
+header .options .menu-btn:active {
+  transform: scale(1);
+}
+
+header .options .menu-btn:active span {
+  transform: skew(0, 0deg);
+}
+
+header .overlay {
+  position: fixed;
+  top: 1.6rem;
+  right: 1.2rem;
+  background-color: rgb(255, 255, 255);
+  width: 2.5rem;
+  height: 2.5rem;
+  border: .5px solid rgb(106, 213, 126);
+  box-shadow: 0 0 0.2px rgba(0, 0, 0, 0.4);
+  /* border-radius: 10rem 15rem; */
+  border-radius: .2rem;
+  z-index: 199;
+  display: none;
+  transition: all 0.5s ease-out;
+}
+
+header .options ul {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+header .options ul li {
+  list-style: none;
+}
+
+header .options ul li a {
+  position: relative;
+  letter-spacing: 0.5px;
+  font-size: 1.6rem;
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+  text-transform: capitalize;
+
+  padding: 0.4em 0.6em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+header .options ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -9;
+  width: 2px;
+  height: 100%;
+  border-radius: 0.25em;
+  background-color: var(--hover-bgColor);
+  transition: all 0.3s ease-out;
+}
+
+header .options ul li a:hover::before {
+  width: 100%;
+}
+
+header .options ul li a:active::before {
+  width: 5px;
+}
+
+/* 750px */
+@media screen and (max-width: 46.875em) {
+  header .options ul {
+    position: fixed;
+    top: 5.5rem;
+    right: 5rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    transform: translate(150%, -100%);
+
+    transition: all 0.5s ease-out;
+    z-index: 299;
+  }
+  header .options .menu-btn {
+    display: block;
+  }
+
+  header .overlay {
+    display: block;
+  }
+}

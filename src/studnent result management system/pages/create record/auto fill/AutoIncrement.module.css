@@ -1,0 +1,46 @@
+.increment {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.increment .cont {
+  margin-right: 1rem;
+  width: 95%;
+  max-width: 50rem;
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+
+  padding: 2rem 2rem;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.6);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  z-index: 99;
+  transition: all 0.4s ease-out;
+}
+
+.input-style {
+  font-size: 1.2rem !important;
+}
+
+.label-style {
+  font-size: 1.2rem !important;
+}
+
+.btn-style {
+  margin-top: 1.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  text-transform: capitalize !important;
+  font-family: 700 !important;
+  height: 2em;
+  border: 1px solid rgb(192, 192, 192) !important;
+  font-size: 1.5rem !important;
+  border-radius: 4rem !important;
+  padding: 0 !important;
+  background-color: rgba(0, 231, 58, 0.4);
+}

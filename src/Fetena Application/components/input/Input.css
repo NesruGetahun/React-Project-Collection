@@ -1,0 +1,47 @@
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-end;
+}
+
+.input-cont label {
+  color: rgb(255, 110, 0);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-out;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.input-cont input {
+  width: 100%;
+  color: rgb(40, 40, 40);
+  outline: none;
+  border: none;
+  padding: 1rem 1rem;
+  background-color: rgba(136, 255, 136, 0.15);
+  border-bottom: 2px solid rgb(64, 64, 64);
+  border-radius: 0.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+}
+
+.input-cont input:focus {
+  background-color: rgba(153, 255, 153, 0.2);
+}
+.input-cont input:focus ~ label {
+  transform: translateY(-200%);
+}
+.input-cont input:not(:placeholder-shown) ~ label {
+  transform: translateY(-200%);
+}
+
+.input-cont input:not(:placeholder-shown) {
+  background-color: rgb(242, 242, 242);
+}

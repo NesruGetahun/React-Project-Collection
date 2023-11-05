@@ -1,0 +1,35 @@
+.create {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.create h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  color: rgb(56, 56, 56);
+}
+
+.create div {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 1.4rem;
+  font-size: 600;
+}
+
+.create form div .summery {
+  height: 8rem;
+}
+
+.create form div .content {
+  height: 30rem;
+}

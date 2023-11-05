@@ -1,0 +1,19 @@
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  width: 60%;
+  max-width: 500px;
+}
+
+.sign-in h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  color: rgb(56, 56, 56);
+}
+
+.sign-in div {
+  display: flex;
+  flex-direction: column;
+}

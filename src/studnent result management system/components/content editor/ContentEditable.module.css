@@ -1,0 +1,57 @@
+.content-editor {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.25s ease-out;
+}
+
+.content-editor p {
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.6);
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* font-style: italic; */
+  outline: none;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 0.4rem 0.4rem;
+  transition: all 0.25s ease-out;
+  line-height: 1.45;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.content-editor p::-webkit-scrollbar {
+  width: 0;
+  scroll-behavior: smooth;
+}
+
+.content-editor p:focus {
+  /* background-color: rgba(165, 255, 182, 0.1); */
+  /* border-color: rgb(58, 58, 58); */
+  box-shadow: 0 0 0 1.2px inset rgb(83, 83, 83);
+}
+
+.content-editor button {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.2rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.content-editor button:hover {
+  transform: scale(1.05);
+}
+
+.content-editor button:active {
+  transform: scale(1);
+}

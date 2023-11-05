@@ -1,0 +1,48 @@
+.pop-up {
+  background-color: white;
+  box-shadow: 0 0 .2rem white;
+  padding: 2rem 2rem;
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.pop-up p {
+  font-size: 2rem;
+  color: rgb(33, 33, 33);
+  max-width: 90%;
+}
+
+.pop-up .btns-cont {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.pop-up .btns-cont button {
+  margin-top: 2rem;
+  outline: none;
+  border: none;
+  background-color: white;
+  font-size: 1.6rem;
+  border: 1px solid gray;
+  width: 8rem;
+  height: 2.2em;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.pop-up .btns-cont button:active {
+  opacity: 0.5;
+}
+
+/* .pop-up .btns-cont button.yes {
+} */
+
+.pop-up .btns-cont button.cancel {
+  background-color: red;
+  color: white;
+}

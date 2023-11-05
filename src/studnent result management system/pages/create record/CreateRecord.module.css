@@ -1,0 +1,89 @@
+.create-record {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-record .control-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 0.6rem 0;
+  background-color: rgba(230, 230, 230, 0.3);
+}
+
+.create-record .control-section form {
+  width: 100%;
+  max-width: 16rem;
+  background-color: white;
+  margin: 0 1rem;
+  display: flex;
+  gap: 0.5rem;
+
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Component Style */
+.btn-style {
+  height: 3.4rem;
+  width: 3.4rem !important;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.create-record .control-section .other-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 0.7rem;
+}
+
+.create-record .control-section .other-controls .btn-cont {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  background-color: rgba(186, 186, 186, 0.15);
+
+  margin-right: 0.5rem;
+}
+
+.create-record .control-section .other-controls .btn-cont p {
+  white-space: nowrap;
+  color: rgb(0, 0, 120);
+  font-size: 1.15rem;
+  /* font-style: italic; */
+
+  padding: 0.2rem 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.create-record .control-section .other-controls .btn-cont p:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgb(177, 177, 177);
+}
+
+.create-record .control-section .other-controls .btn-cont p:active {
+  opacity: 0.7;
+}
+
+.create-record .records-section {
+  width: 100%;
+  height: 81vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}

@@ -1,0 +1,19 @@
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  margin-top: 1.5rem;
+}
+
+.main-cont .multiple-choice .options {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 80%;
+}
+
+.main-cont .common-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}

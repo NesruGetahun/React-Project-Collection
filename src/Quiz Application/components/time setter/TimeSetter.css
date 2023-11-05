@@ -1,0 +1,76 @@
+.time-setter {
+  height: 100vh;
+  width: 100%;
+  min-width: 30rem;
+  max-width: 35rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.time-setter .input-cont {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.time-setter .input-cont input {
+  font-size: 1.8rem;
+  background-color: rgb(238, 238, 238);
+  padding: 0.8em 0.8em;
+  outline: none;
+  border: 1.4px solid rgba(0, 0, 139, 0.5);
+  border-radius: 0.4rem;
+  transition: all 0.3s ease-out;
+}
+
+.time-setter .input-cont label {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: white;
+  padding: 0 .2em;
+  border-radius: .2em;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translateY(-50%);
+  z-index: 99;
+  transition: all 0.4s ease-out;
+}
+
+.time-setter input:focus {
+  background-color: rgb(255, 255, 255);
+}
+
+.time-setter input:focus ~ label {
+  transform: translateY(-200%);
+}
+
+.time-setter input:not(:placeholder-shown) ~ label {
+  transform: translateY(-200%);
+}
+.time-setter button {
+  align-self: end;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.8rem;
+  padding: 0.5em 0.8em;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0.2em;
+  color: rgb(60, 60, 60);
+  background-color: rgba(137, 153, 255, 0.4);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.time-setter button:hover {
+  transform: translateY(-0.2em);
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.3);
+}
+.time-setter button:active {
+  transform: translateY(0);
+}

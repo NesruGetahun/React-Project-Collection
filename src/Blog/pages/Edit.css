@@ -1,0 +1,8 @@
+.action {
+   display: flex;
+   flex-direction: row !important;
+   flex-wrap: nowrap;
+   gap: .5rem  !important;
+   justify-content: flex-end;
+   align-items: center;
+}
